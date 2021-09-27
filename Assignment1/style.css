@@ -1,0 +1,25 @@
+
+h2 {
+    font-family: Raleway;
+    text-transform: uppercase;
+    margin: 1.66%;
+    border-bottom: 1px solid #DAAD86;
+    width: 30%;
+    padding-bottom: 20px;
+    /* border-width: 30%; */
+    
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    margin: 2%;
+    float: inline-end;
+    background-color: #fbeec1;
+    
+}
+
+body {
+    background-color: #8F746E;
+}
+
