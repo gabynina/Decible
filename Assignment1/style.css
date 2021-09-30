@@ -1,11 +1,50 @@
-h1 {width: 150px; /* width of container */
+#playlist {width: 150px; /* width of container */
     height: 150px; /* height of container */
     margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    
+    font-family: Raleway;
+}
 
+
+body {
+    background-color: #8F746E;
+    color: white;
+    
+}
+
+.logo{
+    margin-top: 0%;
+    height: 30px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.navBar {
+    text-align: center;
+    list-style-type: none;
+    margin: 2;
+    padding: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    word-spacing: 5rem;
+  }
+
+.navBar ul{
+    
+}
+
+#bar{
+    display: inline;
+}
+
+
+li{
+    list-style-type: number;
+    text-align: center;
+   
 }
 
 
@@ -14,23 +53,6 @@ img {
     width: 350px;
     height: 350px;
     margin: 2%;
-    background-color: #fbeec1;
-    
 }
 
-body {
-    background-color: #8F746E;
-}
 
-div {
-    display: none;
-    border: 1px solid#000;
-    height: 30px;
-    width: 290px;
-    margin-left: 10px;
-    
-}
-
-a:hover + div {
-    display: block;
-}
