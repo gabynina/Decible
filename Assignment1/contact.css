@@ -58,7 +58,7 @@ input[type=email]{
 }
 
 
-input[type=submit] {
+#submit {
     width: 20%;
     background-color: #7395ae;
     color: white;
@@ -70,7 +70,7 @@ input[type=submit] {
     text-align: center;
 }
   
-input[type=submit]:hover {
+#submit:hover {
     background-color: #557A95;
 }
 

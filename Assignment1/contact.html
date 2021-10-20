@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 
     <h2>Send us a message!</h2>
 
-    <form >
+    <form class="enterForm" action = '/submit-message' method='POST'></form>
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="email">Email:</label><br>
@@ -37,13 +38,10 @@
     <input type="text" id="subject" name="subject"><br><br>
     <label for="message">Message:</label><br>
     <input type="text" id="message" name="message"><br><br>
-    <input type="submit" value="Submit" onclick="alertPeople()">
+    <button type="submit" id="submit">Submit</button>
     </form>
 
-
-    <p id="newText"></p>
-
-    <script src="script.js"></script>
+    <h3 id="newText"></h3>
 
 </body>
 
