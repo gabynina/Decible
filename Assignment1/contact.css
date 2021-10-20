@@ -1,0 +1,28 @@
+body {
+    background-color: #8F746E;
+    color: white;
+    
+}
+
+#ContactUs {width: 250px; /* width of container */
+    height: 250px; /* height of container */
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-family: Raleway;
+}
+
+.navBar {
+    text-align: center;
+    list-style-type: none;
+    margin: 2;
+    padding: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    word-spacing: 5rem;
+}
+
+#bar{
+    display: inline;
+}
