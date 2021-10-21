@@ -16,7 +16,7 @@ var appdata
 
 // make all the files in 'public' available
 // https://expressjs.com/en/starter/static-files.html
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 // get json when appropriate
 app.use( express.json() )
@@ -25,16 +25,69 @@ app.use( express.json() )
 // or GET requests
 app.use( express.urlencoded({ extended:true }) )
 
-// serve up static files in the directory public
-app.use( express.static('public') )
+app.set("view engine", "ejs")
+
+//another way to get the pages
+/*
+app.get('/',function(req,res)
+{
+res.send('/contact.html');
+});
+
+app.get('/',function(req,res)
+{
+res.send('/index.html');
+});
+
+app.get('/',function(req,res)
+{
+res.send('/about.html');
+});
+
+app.get('/',function(req,res)
+{
+res.send('/playlists.html');
+});
+*/
+
+
 
 // https://expressjs.com/en/starter/basic-routing.html
+//getting contact page
+
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/contact.html");
+  response.render("contact");
 });
 
 app.get("/contact", (request, response) => {
-  response.sendFile(__dirname + "/contact.html");
+  response.render("contact");
+});
+
+//getting home page
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/index");
+});
+
+app.get("/index", (request, response) => {
+  response.sendFile(__dirname + "/index");
+});
+
+//getting playlist page
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/playlists");
+});
+
+app.get("/playlists", (request, response) => {
+  response.sendFile(__dirname + "/playlists");
+});
+
+//getting about page
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/about");
+});
+
+app.get("/about", (request, response) => {
+  response.sendFile(__dirname + "/about");
 });
 
 //editted below already
