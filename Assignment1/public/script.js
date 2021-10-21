@@ -1,6 +1,6 @@
 window.onload = function(){
     const submitMessage = document.querySelector('#submit')
-    submitMessage.onclick = submit
+    submitMessage.addEventListener = submit
 }
 
 const submit = function( e ) {

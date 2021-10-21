@@ -27,42 +27,30 @@ app.use( express.urlencoded({ extended:true }) )
 
 app.set("view engine", "ejs")
 
-//another way to get the pages
-/*
-app.get('/',function(req,res)
-{
-res.send('/contact.html');
-});
-
-app.get('/',function(req,res)
-{
-res.send('/index.html');
-});
-
-app.get('/',function(req,res)
-{
-res.send('/about.html');
-});
-
-app.get('/',function(req,res)
-{
-res.send('/playlists.html');
-});
-*/
-
-
-
 // https://expressjs.com/en/starter/basic-routing.html
+
 //getting contact page
-
-app.get("/", (request, response) => {
-  response.render("contact");
+app.get('/', function(req, res) {
+  res.render('index');
+})
+app.get("/index", function(req, res) {
+  res.render("index");
 });
 
-app.get("/contact", (request, response) => {
-  response.render("contact");
+
+app.get("/about", function(req, res) {
+  res.render("about");
 });
 
+app.get("/contact", function(req, res) {
+  res.render("contact");
+});
+
+app.get("/playlists", function(req, res) {
+  res.render("playlists");
+});
+
+/*
 //getting home page
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index");
@@ -89,6 +77,7 @@ app.get("/", (request, response) => {
 app.get("/about", (request, response) => {
   response.sendFile(__dirname + "/about");
 });
+*/
 
 //editted below already
 app.post( '/submit-message', bodyparser.json(), function( request, response ) {
