@@ -12,7 +12,7 @@ var userData = new Map();
 
 var userAppData = new Map();
 
-var appdata
+var appdata = []
 
 // make all the files in 'public' available
 // https://expressjs.com/en/starter/static-files.html
@@ -51,38 +51,8 @@ app.get("/playlists", function(req, res) {
   res.render("playlists");
 });
 
-/*
-//getting home page
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/index");
-});
-
-app.get("/index", (request, response) => {
-  response.sendFile(__dirname + "/index");
-});
-
-//getting playlist page
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/playlists");
-});
-
-app.get("/playlists", (request, response) => {
-  response.sendFile(__dirname + "/playlists");
-});
-
-//getting about page
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/about");
-});
-
-app.get("/about", (request, response) => {
-  response.sendFile(__dirname + "/about");
-});
-*/
-
-//editted below already
 app.post( '/submit-message', bodyparser.json(), function( request, response ) {
-  console.log(`submit-message post request: ${request}`);
+  console.log(`submit-message post request:`);
   let dataString = ''
 
   request.on( 'data', function( data ) {
