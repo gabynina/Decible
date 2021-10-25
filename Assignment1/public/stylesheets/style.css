@@ -1,4 +1,10 @@
-#playlist {width: 150px; /* width of container */
+body {
+    background-color: #8F746E;
+    color: white;
+    
+}
+
+#playlists {width: 150px; /* width of container */
     height: 150px; /* height of container */
     margin-top: -20px;
     margin-left: auto;
@@ -7,21 +13,6 @@
     font-family: Raleway;
 }
 
-
-body {
-    background-color: #8F746E;
-    color: white;
-    
-}
-
-.logo{
-    margin-top: 0%;
-    height: 30px;
-    width: 390px;
-    margin-left: auto;
-    margin-right: auto;
-}
-    
 .navBar {
     text-align: center;
     list-style-type: none;
@@ -30,33 +21,9 @@ body {
     font-weight: 600;
     letter-spacing: 0.1rem;
     word-spacing: 5rem;
-  }
-
-.navBar ul{
-    padding: 0px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
 }
 
 #bar{
     display: inline;
 }
-
-
-li{
-    list-style-type: number;
-    text-align: center;
-    list-style-position: inside;
-    
-}
-
-
-img {
-    margin-top: 20px;
-    width: 350px;
-    height: 350px;
-    margin: 2%;
-}
-
 
