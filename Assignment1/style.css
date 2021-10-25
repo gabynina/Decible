@@ -33,7 +33,10 @@ body {
   }
 
 .navBar ul{
-    
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #bar{
@@ -44,7 +47,8 @@ body {
 li{
     list-style-type: number;
     text-align: center;
-   
+    list-style-position: inside;
+    
 }
 
 
