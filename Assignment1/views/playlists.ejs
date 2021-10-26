@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <script src="/play.js" defer></script>
 </head>
 
 <body>
@@ -29,14 +30,19 @@
 
     <h2>Submit a Song!</h2>
 
-    <form method='POST' action='/submit-message' id='enterForm'></form>
+    <form method='POST' action='/submit-message' id='enter'></form>
     <label for="artist">Artist:</label><br>
     <input type="text" id="artist" name="artist"><br>
     <label for="title">Song title:</label><br>
     <input type="text" id="title" name="title"><br><br>
     <!-- <input type ="Submit" value="Submit" /> -->
-    <button type="submit" id="submit">Submit</button>
+    <button type="submit" id="submitSong2">Submit</button>
     </form>
+
+    <section id = 'thislocation'>
+        <h3 id="newText2"></h3>
+    </section>
+
 
     <ul>
         <li id = "song">Shivers by Ed Sheeran</li>
