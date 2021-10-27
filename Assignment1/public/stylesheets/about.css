@@ -19,8 +19,7 @@ body {
 .navBar {
     text-align: center;
     list-style-type: none;
-    margin: 2;
-    padding: 25px;
+    padding: 20px;
     font-weight: 600;
     letter-spacing: 0.1rem;
     word-spacing: 5rem;
@@ -49,11 +48,12 @@ body {
     padding: 0 16px;
   }
 
-  .container::after, .row::after{
+.container::after, .row::after{
     content: "";
     clear: both;
     display: table;
   }
+
 
 .button {
     border: none;
