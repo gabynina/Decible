@@ -1,4 +1,5 @@
 body {
+    font-family: Raleway;
     background-color: #8F746E;
     color: white;
     
@@ -9,8 +10,10 @@ body {
     margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
-    font-family: Raleway;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Raleway';
+    text-align: center;
 }
 
 .navBar {
@@ -21,10 +24,64 @@ body {
     font-weight: 600;
     letter-spacing: 0.1rem;
     word-spacing: 5rem;
+    font-family: Raleway;
   }
-
-
 
 #bar{
     display: inline;
 }
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-left: 10%;
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.card {
+    box-shadow: 0 5px 8px 0 #b3ac6a;
+    margin: 6px;
+    border-radius: 8px;
+  }
+
+.container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #c4ae9b;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: Raleway;
+  }
+
+.button:hover {
+    background-color: #555;
+  }
+
+.title {
+    color: #b3ac6a;
+    font-size: 20px;
+  }
+
+.summary{
+    margin-bottom: 20px;
+    margin-top: -100px;
+    padding: 2%;
+    float: left;
+
+  }
+
