@@ -21,9 +21,16 @@ body {
     font-weight: 600;
     letter-spacing: 0.1rem;
     word-spacing: 5rem;
+    font-family: Raleway;
 }
 
 #bar{
     display: inline;
+}
+
+img {
+    object-fit: cover;
+    width:230px;
+    height:230px;
 }
 
