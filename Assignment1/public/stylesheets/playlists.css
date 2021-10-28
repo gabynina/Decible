@@ -49,7 +49,55 @@ li{
     text-align: center;
    
 }
+ol {
+    counter-reset: li;
+    list-style: none;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
 
+ol top10 {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    margin: .5em 0 .5em 2.5em;
+    background: #c4be84;
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    font-family: Raleway;
+  }
+  
+  ol top10:hover {background: #DCDDE1;}       
+  ol top10:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #8D8714;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  ol top10:after {
+    position: absolute;
+    content: "";
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+  }
+  
+  ol top10:hover:after {
+    left: -.5em;
+    border-left-color: #f9dd94;
+  }
 
 img {
     margin-top: 20px;
