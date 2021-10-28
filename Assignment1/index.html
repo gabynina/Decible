@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dB-Playlists</title>
-    <link rel="stylesheet" href="/stylesheets/playlists.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
-    <script src="/play.js" defer></script>
 </head>
+
+   
 
 <body>
     <div class = "navBar">
         <div id = "navContainer">
             <img src="images/Logo.png" alt="">
             <ul>
-                <li id=bar><a href="index">Home</a></li>
-                <li id=bar><a href="playlists">Playlists</a></li>
-                <li id=bar><a href="contact">Contact</a></li>
-                <li id=bar><a href="about">About</a></li>
+                <li id=bar><a href="default.asp">Home</a></li>
+                <li id=bar><a href="news.asp">Playlists</a></li>
+                <li id=bar><a href="contact.asp">Contact</a></li>
+                <li id=bar><a href="about.asp">About</a></li>
             </ul>
         </div>  
     </div>
@@ -29,34 +30,18 @@
 
     <h1 id="playlist" > Playlist</h1>
 
-    <h2>Submit a Song!</h2>
-
-    <form method='POST' action='/submit-message' id='enter'></form>
-    <label for="artist">Artist:</label><br>
-    <input type="text" id="artist" name="artist"><br>
-    <label for="title">Song title:</label><br>
-    <input type="text" id="title" name="title"><br><br>
-    <!-- <input type ="Submit" value="Submit" /> -->
-    <button type="submit" id="submitSong2">Submit</button>
-    </form>
-
-    <section id = 'thislocation'>
-        <h3 id="newText2"></h3>
-    </section>
-    
-    <ol>
-        <li class = "music" ><top10 href = "#"> Shivers by Ed Sheeran</a></li>
-        <li class = "music" ><top10 href = "#"> STAY by The Kid LAROI, Justin Bieber</a></li>
-        <li class = "music" ><top10 href = "#"> Industry Baby (feat. Jack Harlow) Lil Nas</a></li>
-        <li class = "music" ><top10 href = "#"> Woman by Doja Cat</a></li>
-        <li class = "music" ><top10 href = "#"> Thats What I Want by Lil Nas X</a></li>
-        <li class = "music" ><top10 href = "#"> Way 2 Sexy (with Future & Young Thug) Drake</a></li>
-        <li class = "music" ><top10 href = "#"> Love Again by Dua Lipa Drake</a></li>
-        <li class = "music" ><top10 href = "#"> Saturday by Twenty One Pilots Drake</a></li>
-        <li class = "music" ><top10 href = "#"> Rumors (feat. Cardi B) Lizzo Drake</a></li>
-        <li class = "music" ><top10 href = "#"> Sorry by Justin Bieber</a></li>
-    </ol>
-
+    <ul>
+        <li id = "song">Shivers by Ed Sheeran</li>
+        <li id = "song">STAY by The Kid LAROI, Justin Bieber</li>
+        <li id = "song">UNDUSTRY BABY (feat. Jack Harlow) Lil Nas X</li>
+        <li id = "song">Woman by Doja Cat</li>
+        <li id = "song">THATS WHAT I WANT by Lil Nas X</li>
+        <li id = "song">Way 2 Sexy (with Future & Young Thug) Drake</li>
+        <li id = "song">Love Again by Dua Lipa</li>
+        <li id = "song">Saturday by Twenty One Pilots</li>
+        <li id = "song">Rumors (feat. Cardi B) Lizzo</li>
+        <li id = "song">Sorry by Justin Bieber</li>
+    </ul>
 
 
     <!--Ed Sheeran-->
@@ -87,5 +72,4 @@
     <img src="https://images.genius.com/52ff516ba3efdd22cc0a154eb4c75d2d.1000x1000x1.png" alt="">
 
 </body>
-
 </html>
