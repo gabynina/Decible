@@ -27,6 +27,40 @@
     </div>
 
     <h1 class="animate__animated animate__bounce" id="Home">Home</h1>
+
+
+    <section>
+        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style = "width: 100%">
+        <img class = "Slideshow" src = "https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg" style = "width: 100%">
+        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png" style = "width: 100%">
+        <img class = "Slideshow" src = "https://i.ytimg.com/an/2V_uAAAH-_Q/7608203655284526850_mq.jpg?v=60e4a32f" style = "width: 100%">
+        <img class = "Slideshow" src = "https://i.scdn.co/image/ab67616d0000b2739e495fb707973f3390850eea" style = "width: 100%">
+        <img class = "Slideshow" src = "https://i.scdn.co/image/ab67616d0000b273fa0ab3a28b5c52d8a5f97045" style = "width: 100%">
+        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/2/2e/Ed_Sheeran_-_Bad_Habits_2.png" style = "width: 100%">
+        <img class = "Slideshow" src = "https://m.media-amazon.com/images/I/61WiaCLSN8L._SS500_.jpg" style = "width: 100%">
+        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style = "width: 100%">
+    </section>
+
+    var Index = 0;
+    cycle();
+
+    function cycle(){
+        var i;
+        var x = document.getElementByClassName("Slideshow");
+        for(i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        Index++;
+        if (Index > x.length) {Index = 1}
+        x[Index - 1].style.display = "block";
+        setTimeout(cycle, 5000);
+    }
+
+    <section class = "Homepage" style = "max-width: 500px;">
+        <p class = "Homepage"> 
+            Welcome to our site, here you will have the oppurtunity to show others your taste in music, along with discover others taste in music as well!
+        </p>
+    </section>
 </body>
 
 </html>
