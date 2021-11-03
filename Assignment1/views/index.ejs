@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="/home.js" defer></script>
 
 </head>
 
@@ -28,39 +29,89 @@
 
     <h1 class="animate__animated animate__bounce" id="Home">Home</h1>
 
-
-    <section>
-        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style = "width: 100%">
-        <img class = "Slideshow" src = "https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg" style = "width: 100%">
-        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png" style = "width: 100%">
-        <img class = "Slideshow" src = "https://i.ytimg.com/an/2V_uAAAH-_Q/7608203655284526850_mq.jpg?v=60e4a32f" style = "width: 100%">
-        <img class = "Slideshow" src = "https://i.scdn.co/image/ab67616d0000b2739e495fb707973f3390850eea" style = "width: 100%">
-        <img class = "Slideshow" src = "https://i.scdn.co/image/ab67616d0000b273fa0ab3a28b5c52d8a5f97045" style = "width: 100%">
-        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/2/2e/Ed_Sheeran_-_Bad_Habits_2.png" style = "width: 100%">
-        <img class = "Slideshow" src = "https://m.media-amazon.com/images/I/61WiaCLSN8L._SS500_.jpg" style = "width: 100%">
-        <img class = "Slideshow" src = "https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style = "width: 100%">
-    </section>
-
-    var Index = 0;
-    cycle();
-
-    function cycle(){
-        var i;
-        var x = document.getElementByClassName("Slideshow");
-        for(i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        Index++;
-        if (Index > x.length) {Index = 1}
-        x[Index - 1].style.display = "block";
-        setTimeout(cycle, 5000);
-    }
-
-    <section class = "Homepage" style = "max-width: 500px;">
-        <p class = "Homepage"> 
+    <section id = "Homepage">
+        <h2 id = "Homepage"> 
             Welcome to our site, here you will have the oppurtunity to show others your taste in music, along with discover others taste in music as well!
-        </p>
+        </h2>
     </section>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 10</div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style="width:100%">
+        <div class="text">Shivers By Ed Sheeran</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 10</div>
+        <img src="https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg" style="width:100%">
+        <div class="text">Industry Baby (feat. Jack Harlow) Lil Nas</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 10</div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png" style="width:100%">
+        <div class="text">STAY by The Kid LAROI, Justin Bieber</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 10</div>
+        <img src="https://i.ytimg.com/an/2V_uAAAH-_Q/7608203655284526850_mq.jpg?v=60e4a32f" style="width:100%">
+        <div class="text">Woman by Doja Cat</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 10</div>
+        <img src="https://i.scdn.co/image/ab67616d0000b273be82673b5f79d9658ec0a9fd" style="width:100%">
+        <div class="text">Thats What I Want by Lil Nas X</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">6 / 10</div>
+        <img src="https://i1.sndcdn.com/artworks-qN9KEYWzV42q-0-t500x500.jpg" style="width:100%">
+        <div class="text">Way 2 Sexy (with Future & Young Thug) Drake</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">7 / 10</div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Dua_Lipa_-_Love_Again_cover_art.png" style="width:100%">
+        <div class="text">Love Again by Dua Lipa Drake</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">8 / 10</div>
+        <img src="https://justrandomthings.com/wp-content/uploads/2021/05/Capture1-5.jpg" style="width:100%">
+        <div class="text">Saturday by Twenty One Pilots Drake</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">9 / 10</div>
+        <img src="https://stylecaster.com/wp-content/uploads/2021/08/lizzo-rumors.jpeg?w=480" style="width:100%">
+        <div class="text">Rumors (feat. Cardi B) Lizzo Drake</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">10 / 10</div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Justin_Bieber_-_Sorry_%28Official_Single_Cover%29.png" style="width:100%">
+        <div class="text">Sorry by Justin Bieber</div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
 </body>
 
 </html>
