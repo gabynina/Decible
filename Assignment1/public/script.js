@@ -9,10 +9,11 @@ const submitMessageFunction = function( e ) {
         json = { name: n.value, email: em.value, subject: s.value, message: me.value},
         body = JSON.stringify( json )
   
-  fetch( '/submit-message', {
+  fetch('/submit-message', {
     method:'POST',
     body 
   })
+  
   .then( function( response ) {
     return response.json()
   })

@@ -7,10 +7,11 @@ const submitSongFunction = function( k ) {
           json = { artist: a.value, title: t.value},
           body = JSON.stringify( json )
     
-    fetch( '/submit-message', {
+    fetch('/submit-song', {
       method:'POST',
       body 
     })
+
     .then( function( response ) {
       return response.json()
     })

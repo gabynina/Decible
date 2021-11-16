@@ -14,6 +14,16 @@ var userAppData = new Map();
 
 var appdata = []
 
+//database stuff
+const mongoose = require("mongoose")
+const songsModel = require("./modules/songs")
+const contactsModel = require("./modules/contacts")
+var connectionUrl = "mongodb+srv://user:userpassword@cluster0.lmzh7.mongodb.net/decibel?retryWrites=true&w=majority"
+mongoose.connect(connectionUrl, {useNewUrlParser: true, useUnifiedTopology: true}, (err)=>{
+    if(err) throw err
+    console.log("Connected")
+})
+
 // make all the files in 'public' available
 // https://expressjs.com/en/starter/static-files.html
 app.use(express.static(__dirname + "/public"));
@@ -66,6 +76,38 @@ app.post( '/submit-message', bodyparser.json(), function( request, response ) {
     response.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
     response.end(JSON.stringify(appdata))
   })
+
+  //datebase stuff
+  const Savecontacts = new contactsModel(request.body)
+  Savecontacts.save((error, savedcontacts)=>{
+      if(error) throw error
+      response.json(savedcontacts)
+  })
+})
+
+app.post( '/submit-song', bodyparser.json(), function( req, res ) {
+  console.log(`submit-song post request:`);
+  let dataString = ''
+
+  req.on( 'data', function( data ) {
+      dataString += data 
+  })
+
+  req.on( 'end', function() {
+    const json = JSON.parse( dataString )
+    appdata.push(json)
+    console.log(appdata)
+    res.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
+    res.end(JSON.stringify(appdata))
+  })
+
+  //datebase stuff
+  const Savesongs = new songsModel(req.body)
+  Savesongs.save((error, savedsongs)=>{
+      if(error) throw error
+      res.json(savedsongs)
+  })
+
 })
 
 
