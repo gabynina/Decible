@@ -7,7 +7,7 @@ const submitSongFunction = function( k ) {
           json = { artist: a.value, title: t.value},
           body = JSON.stringify( json )
     
-    fetch('/submit-song', {
+    fetch('/playlists/playlists', {
       method:'POST',
       body 
     })
@@ -20,6 +20,9 @@ const submitSongFunction = function( k ) {
     
       reload(json)
       document.querySelector("#enter").reset();
+    })
+    .catch( function( err ) {
+      console.log(err);
     })
     
     return false
