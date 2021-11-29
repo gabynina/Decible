@@ -48,30 +48,30 @@ app.get("/playlists", function(req, res) {
   res.render("playlists");
 });
 
-app.post( '/contact/contact', function( request, response ) {
+app.post( '/contact/contact', function( req, res ) {
   console.log(`contact/contact post request:`);
   let dataString = ''
 
-  request.on( 'data', function( data ) {
+  req.on( 'data', function( data ) {
       dataString += data 
   })
 
-  request.on( 'end', function() {
+  req.on( 'end', function() {
     const json = JSON.parse( dataString )
     appdata.push(json)
     console.log(appdata)
     // response.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
-    response.setHeader('content-type', 'text/plain');
-    response.end(JSON.stringify(appdata))
+    res.setHeader('content-type', 'text/plain');
+    res.end(JSON.stringify(appdata))
   })
 
-  Contact.create(request.body.contact, function (err, contact) {
-    console.log(request.body.contact)
+  Contact.create(req.body.contact, function (err, contact) {
+    console.log(req.body.contact)
     if (err) {
-        console.error(err);
-    } else {
-        response.redirect('/contact');
-    }
+      console.error(err);
+  } else {
+      res.redirect('/contact');
+  }
   })
 
 })
@@ -88,8 +88,17 @@ app.post( '/playlists/playlists', bodyparser.json(), function( req, res ) {
     const json = JSON.parse( dataString )
     appdata.push(json)
     console.log(appdata)
-    res.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
+    res.setHeader('content-type', 'text/plain');
     res.end(JSON.stringify(appdata))
+  })
+
+  Playlists.create(req.body.playlists, function (err, playlists) {
+    console.log(req.body.playlists)
+    if (err) {
+        console.error(err);
+    } else {
+        res.redirect('/playlists');
+    }
   })
 
 })
