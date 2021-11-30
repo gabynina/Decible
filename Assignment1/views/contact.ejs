@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dB-Playlists</title>
     <link rel="stylesheet" href="/stylesheets/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
@@ -21,11 +22,13 @@
                 <li id=bar><a href="playlists">Playlists</a></li>
                 <li id=bar><a href="contact">Contact</a></li>
                 <li id=bar><a href="about">About</a></li>
+                <li id=bar><a href="Submit">Submit</a></li>
             </ul>
         </div>  
     </div>
 
-    <h1 id="ContactUs" > Contact Us</h1>
+    <h1 class="animate__animated animate__bounce" id="ContactUs" > Contact Us</h1>
+
 
     <h2>Send us a message!</h2>
 
@@ -40,7 +43,7 @@
     <input type="message" id="message" name="contact[message]"><br><br>
     
     <!-- <input type ="Submit" value="Submit" /> -->
-    <button type="submit" id="submit">Submit</button>
+    <button type="submit" id="submit" onclick="alert('Thank you, we will contact you with the email that you provided!')">Submit</button>
     </form>
 
     <h3 id="newText"></h3>
