@@ -9,18 +9,23 @@ const submitMessageFunction = function( e ) {
         json = { name: n.value, email: em.value, subject: s.value, message: me.value},
         body = JSON.stringify( json )
   
-  fetch( '/submit-message', {
+  reload(json)
+  document.querySelector("#enterForm").reset();
+  fetch('/contact/contact', {
     method:'POST',
     body 
   })
+  
   .then( function( response ) {
     return response.json()
   })
   .then( function( json ) {
     console.log(json)
   
-    reload(json)
-    document.querySelector("#enterForm").reset();
+    
+  })
+  .catch( function( err ) {
+    console.log(err);
   })
   
   return false
