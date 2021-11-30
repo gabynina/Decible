@@ -1,0 +1,24 @@
+
+<body>
+    <div class = "navBar">
+        <div id = "navContainer">
+            <img src="images/Logo.png" alt="">
+            <ul>
+                <li id=bar><a href="index">Home</a></li>
+                <li id=bar><a href="playlists">Playlists</a></li>
+                <li id=bar><a href="contact">Contact</a></li>
+                <li id=bar><a href="about">About</a></li>
+                
+            </ul>
+        </div>  
+    </div>
+
+    
+  <form method='POST' action='/submit/submit' id='enter'>
+    <label for="artist">Artist:</label><br>
+    <input type="text" id="artist" name="playlists[artist]"><br>
+    <label for="title">Song title:</label><br>
+    <input type="text" id="title" name="playlists[title]"><br>
+    <input type="submit" onclick="alert('Thank you for your submission')">
+    <!-- <input type ="Submit" value="Submit" /> -->
+    </form>

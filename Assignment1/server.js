@@ -46,6 +46,10 @@ app.get("/playlists", function(req, res) {
   res.render("playlists");
 });
 
+app.get("/submit", function(req, res) {
+  res.render("submit")
+});
+
 app.post( '/contact/contact', function( req, res ) {
   //console.log(`contact/contact post request:`);
   //let dataString = ''
@@ -74,29 +78,14 @@ app.post( '/contact/contact', function( req, res ) {
 
 })
 
-app.post( '/playlists/playlists', bodyparser.json(), function( req, res ) {
-  // console.log(`playlists/playlists post request:`);
-  // let dataString = ''
-
-  // req.on( 'data', function( data ) {
-  //     dataString += data 
-  // })
-
-  // req.on( 'end', function() {
-  //   const json = JSON.parse( dataString )
-  //   appdata.push(json)
-  //   console.log(appdata)
-  //   //res.setHeader('content-type', 'text/plain');
-  //   res.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
-  //   res.end(JSON.stringify(appdata))
-  // })
-
+app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
+  
   Playlists.create(req.body.playlists, function (err, playlists) {
     console.log(req.body.playlists)
     if (err) {
         console.error(err);
     } else {
-        res.redirect('/playlists');
+        res.redirect('/submit');
     }
   })
 
