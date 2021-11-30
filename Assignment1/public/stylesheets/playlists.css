@@ -2,7 +2,6 @@
 
 #playlist {    
     font-family: Raleway;
-
     text-align: center;
     color: white; 
 }
@@ -20,11 +19,12 @@ body {
     
 }
 
-
-#logo {
-    object-fit: cover;
-    width:300px;
-    height:300px;
+.logo{
+    margin-top: 0%;
+    height: 30px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
 }
     
 .navBar {
@@ -37,7 +37,6 @@ body {
     word-spacing: 5rem;
     font-family: Raleway;
   }
-
 
 #bar{
     display: inline;

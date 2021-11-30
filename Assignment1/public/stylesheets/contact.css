@@ -55,7 +55,7 @@ input[type=text]{
     font-family: Raleway;
     padding: 12px 15px;
     border-radius: 6px;
-    border: 2px solid #659DBD;
+    border: 2px solid #b3ac6a;
 }
 
 input[type=email]{
@@ -64,7 +64,7 @@ input[type=email]{
     font-family: Raleway;
     padding: 12px 15px;
     border-radius: 6px;
-    border: 2px solid #659DBD;
+    border: 2px solid #b3ac6a;
 }
 
 input[type=message]{
@@ -73,13 +73,13 @@ input[type=message]{
     font-family: Raleway;
     padding: 16px 15px;
     border-radius: 6px;
-    border: 2px solid #659DBD;
+    border: 2px solid #b3ac6a;
 }
 
 
 #submit {
     width: 20%;
-    background-color: #7395ae;
+    background-color: #b3ac6a;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -90,7 +90,7 @@ input[type=message]{
 }
   
 #submit:hover {
-    background-color: #557A95;
+    background-color: #415a4c;
 }
 
 form{
