@@ -1,0 +1,15 @@
+.navBar {
+    text-align: center;
+    list-style-type: none;
+    margin: 2;
+    padding: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    word-spacing: 5rem;
+    font-family: Raleway;
+  }
+
+
+  #bar{
+    display: inline;
+}
