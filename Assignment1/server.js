@@ -1,6 +1,4 @@
 // server.js
-// need to change most of this data
-
 const express    = require('express')
 const bodyparser = require( 'body-parser' )
 const app        = express()
@@ -49,21 +47,21 @@ app.get("/playlists", function(req, res) {
 });
 
 app.post( '/contact/contact', function( req, res ) {
-  console.log(`contact/contact post request:`);
-  let dataString = ''
+  //console.log(`contact/contact post request:`);
+  //let dataString = ''
 
-  req.on( 'data', function( data ) {
-      dataString += data 
-  })
+  // req.on( 'data', function( data ) {
+  //     dataString += data 
+  // })
 
-  req.on( 'end', function() {
-    const json = JSON.parse( dataString )
-    appdata.push(json)
-    console.log(appdata)
-    // response.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
-    res.setHeader('content-type', 'text/plain');
-    res.end(JSON.stringify(appdata))
-  })
+  // req.on( 'end', function() {
+  //   const json = JSON.parse( dataString )
+  //   appdata.push(json)
+  //   console.log(appdata)
+  //   // response.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
+  //   res.setHeader('content-type', 'text/plain');
+  //   res.end(JSON.stringify(appdata))
+  // })
 
   Contact.create(req.body.contact, function (err, contact) {
     console.log(req.body.contact)
@@ -77,20 +75,21 @@ app.post( '/contact/contact', function( req, res ) {
 })
 
 app.post( '/playlists/playlists', bodyparser.json(), function( req, res ) {
-  console.log(`playlists/playlists post request:`);
-  let dataString = ''
+  // console.log(`playlists/playlists post request:`);
+  // let dataString = ''
 
-  req.on( 'data', function( data ) {
-      dataString += data 
-  })
+  // req.on( 'data', function( data ) {
+  //     dataString += data 
+  // })
 
-  req.on( 'end', function() {
-    const json = JSON.parse( dataString )
-    appdata.push(json)
-    console.log(appdata)
-    res.setHeader('content-type', 'text/plain');
-    res.end(JSON.stringify(appdata))
-  })
+  // req.on( 'end', function() {
+  //   const json = JSON.parse( dataString )
+  //   appdata.push(json)
+  //   console.log(appdata)
+  //   //res.setHeader('content-type', 'text/plain');
+  //   res.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
+  //   res.end(JSON.stringify(appdata))
+  // })
 
   Playlists.create(req.body.playlists, function (err, playlists) {
     console.log(req.body.playlists)
