@@ -20,11 +20,7 @@
     margin-top: 60px;
     margin-bottom: 10px;
 }
-#logo {
-  object-fit: cover;
-  width:300px;
-  height:300px;
-}
+
 
 h2{
     text-align: center;
@@ -35,28 +31,6 @@ h2{
     margin-top: 5px;
 }
 
-.navBar {
-    text-align: center;
-    list-style-type: none;
-    margin: 2;
-    padding: 25px;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    word-spacing: 5rem;
-    font-family: Raleway;
-}
-
-#bar{
-    display: inline;
-}
-
-#bar{
-    display: inline;
-}
-
-#bar{
-  display: inline;
-}
 
 input:focus {
   background-color: #edcec5;
