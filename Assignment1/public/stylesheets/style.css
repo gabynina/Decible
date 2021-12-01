@@ -13,19 +13,11 @@
     margin-bottom: 10px;
 }
 
-#logo {
-  object-fit: cover;
-  margin: 25px 50px 75px;
-  width: 15%;
-  height: 15%;
-}
 
 #Homepage {width: 850px; /* width of container */
     height: 100px; /* height of container */
-    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
     font-family: Raleway;
     font-size: 25px;
     color: #eabab0;
@@ -47,10 +39,10 @@
     display: inline;
 }
 
-#logoimg {
-    object-fit: cover;
-    width:300px;
-    height:300px;
+#logo {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
 }
 
 
