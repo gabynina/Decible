@@ -3,16 +3,22 @@
     background-color: #8F746E;
     color: white;    
   }
+
+  .w3-theme-d1{
+    color:#8F746E !important; 
+    background-color:#2e2222 !important;
+  }
+
 #ContactUs {
     width: 100%; /* width of container */
     height: 100%; /* height of container */
-    margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
     font-family: 'Raleway';
     text-align: center;
     font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 #logo {
   object-fit: cover;
