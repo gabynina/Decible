@@ -4,11 +4,19 @@
     color: white;    
   }
 
+
+.w3-theme-d1{
+    color:#8F746E !important; 
+    background-color:#2e2222 !important;
+  }
+
 #playlist {    
     font-family: Raleway;
     font-weight: bold;
     text-align: center;
     color: white; 
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 #listen {
@@ -35,7 +43,6 @@
     word-spacing: 5rem;
     font-family: Raleway;
   }
-
 
 #bar{
     display: inline;

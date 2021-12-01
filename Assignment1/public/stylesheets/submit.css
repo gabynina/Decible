@@ -6,27 +6,12 @@
 
 }
 
-#logoimg {
-  object-fit: cover;
-  width:300px;
-  height:300px;
+.w3-theme-d1{
+  color:#8F746E !important; 
+  background-color:#2e2222 !important;
 }
 
-.navBar {
-    text-align: center;
-    list-style-type: none;
-    margin: 2;
-    padding: 25px;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    word-spacing: 5rem;
-    font-family: Raleway;
-  }
 
-
-  #bar{
-    display: inline;
-}
 
 input[type], input[for]{
   width: 80%; /* width of container */
@@ -62,21 +47,16 @@ input[type="submit"]{
 #submittitle
  {width: 60%; /* width of container */
   height: 150px; /* height of container */
-  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
   margin-top: 20px;
   font-family: 'Raleway';
   text-align: center;
   font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 10px;
 }
 
-#logo {
-  object-fit: cover;
-  width:300px;
-  height:300px;
-}
 
 .bg-grey {
   background: #2e2222;
