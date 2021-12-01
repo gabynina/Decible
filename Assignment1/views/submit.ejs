@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dB-Playlists</title>
     <link rel="stylesheet" href="/stylesheets/submit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
-    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class = "bodyy">
     <div class = "navBar">
         <div id = "navContainer">
-            <img src="images/Logo.png" alt="">
+            <img src="images/decibel.PNG" alt="">
             <ul>
                 <li id=bar><a href="index">Home</a></li>
                 <li id=bar><a href="playlists">Playlists</a></li>
@@ -27,7 +30,8 @@
         </div>  
     </div>
 
-    
+    <h1 class="animate__animated animate__bounce" id="submittitle" > Submit a Song Here</h1>
+
   <form method='POST' action='/submit/submit' id='enter'>
     <label for="artist">Artist:</label><br>
     <input type="text" id="artist" name="playlists[artist]"><br>
@@ -35,4 +39,57 @@
     <input type="text" id="title" name="playlists[title]"><br>
     <input type="submit" onclick="alert('Thank you for your submission')">
     <!-- <input type ="Submit" value="Submit" /> -->
-    </form>
+  </form>
+</body>
+
+<footer class="container-fluid bg-grey py-5">
+    <div class="container2">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                      <img src="images/decibel.PNG" class="w-50 logo-footer" >
+                      <p class = "ps">3399 North Rd. Poughkeepsie, NY 12601</p>
+                      <p class = "ps">Where you go to submit make playlists with the world.</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6 class = "h66">Reach Out</h6>
+                   <p class = "ps">Try it for yourself!</p>
+                   <a href="Submit" class="btn-footer"> Submit a Song </a><br>
+                   <a href="contact" class="btn-footer"> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6 class = "h66">Important Links</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul class = "pages">
+                            <li> <a class = "ps" href="index"> Home</a> </li>
+                            <li> <a class = "ps" href="playlists"> Playlists</a> </li>
+                            <li> <a class = "ps" href="contact"> Contact</a> </li>
+                            <li> <a class = "ps" href="about"> About</a> </li>
+                            <li> <a class = "ps" href="Submit"> Submit</a> </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6 class = "h66"> Creators</h6>
+                   <p class = "ps">Angelina Chirichella</p>
+                   <p class = "ps">Gabriella Nina</p>
+                   <p class = "ps">Genevieve Anderson</p>
+                   <p class = "ps">Kylie Wasserman</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</footer>
+
+</html>
+
