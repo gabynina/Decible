@@ -14,109 +14,126 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body class = "bodyy">
-    <div class = "navBar">
-        <div id = "navContainer">
-            <img src="images/decibel.PNG" id = "logoimg" alt="">
-            <ul>
-                <li id=bar><a href="index" style= "color: #ecc9c2">Home</a></li>
-                <li id=bar><a href="playlists" style= "color: #ecc9c2">Playlists</a></li>
-                <li id=bar><a href="contact" style= "color: #ecc9c2">Contact</a></li>
-                <li id=bar><a href="about" style= "color: #ecc9c2">About</a></li>
-                <li id=bar><a href="Submit" style= "color: #ecc9c2">Submit</a></li>
-            </ul>
-        </div>  
-    </div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+   <div class="w3-bar w3-theme-d1 w3-card" id="myNavbar">
+     <a href="index" class="w3-bar-item w3-button w3-wide">Decibel</a>
+     
+     <!-- Right-sided navbar links -->
+     <div class="w3-right w3-hide-small">
+       <a href="Submit" class="w3-bar-item w3-button">SUBMIT A SONG</a>
+       <a href="about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+       <a href="playlists" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PLAYLISTS</a>
+       <a href="contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+     </div>
+     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+ 
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+       <i class="fa fa-bars"></i>
+     </a>
+   </div>
+ </div>
 
-    <h1 class="animate__animated animate__bounce" id="Home">Home</h1>
+ <!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+   <a href="Submit" onclick="w3_close()" class="w3-bar-item w3-button">SUBMIT A SONG</a>
+   <a href="about" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+   <a href="playlists" onclick="w3_close()" class="w3-bar-item w3-button">PLAYLISTS</a>
+   <a href="contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+ </nav>
+ 
 
-    <section id = "Homepage">
-        <h2 id = "Homepage"> 
-            Welcome to our site, here you will have the oppurtunity to show others your taste in music, along with discover others taste in music as well!
-        </h2>
-    </section>
+<script>
+ // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-        <div class="numbertext">1 / 10</div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style="width:100%" id = "slideshowimg" >
-        <div class="text">Shivers By Ed Sheeran</div>
-        </div>
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+ 
+
+
+<img src="images/decibel.PNG" alt="" id = "logo" style="width: 100%;">
+
+<section id = "Homepage">
+   <h2 id = "Homepage"> 
+      Welcome to our site, here you will have the oppurtunity to show other's your taste in music, along with discover others taste in music as well!
+   </h2>
+</section>
+
     
-        <div class="mySlides fade">
-        <div class="numbertext">2 / 10</div>
-        <img src="https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg" style="width:100%" id = "slideshowimg" >
-        <div class="text">Industry Baby (feat. Jack Harlow) Lil Nas</div>
-        </div>
-    
-        <div class="mySlides fade">
-        <div class="numbertext">3 / 10</div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png" style="width:100%" id = "slideshowimg" >
-        <div class="text">STAY by The Kid LAROI, Justin Bieber</div>
-        </div>
+<!-- Album Section -->
+   <div class="w3-row-padding" style="margin-top:60px">
+     <div class="w3-col l3 m6">
+       <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Ed_Sheeran_-_Shivers.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Shivers By Ed Sheeran">
+     </div>
+     <div class="w3-col l3 m6">
+       <img src="https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Industry Baby (feat. Jack Harlow) Lil Nas">
+     </div>
+     <div class="w3-col l3 m6">
+       <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="STAY by The Kid LAROI, Justin Bieber">
+     </div>
+     <div class="w3-col l3 m6">
+       <img src="https://i.ytimg.com/an/2V_uAAAH-_Q/7608203655284526850_mq.jpg?v=60e4a32f" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Woman by Doja Cat">
+     </div>
+   </div>
+ 
+   <div class="w3-row-padding w3-section">
+     <div class="w3-col l3 m6">
+       <img src="https://i.scdn.co/image/ab67616d0000b273be82673b5f79d9658ec0a9fd" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Thats What I Want by Lil Nas X">
+     </div>
+     <div class="w3-col l3 m6">
+       <img src="https://i1.sndcdn.com/artworks-qN9KEYWzV42q-0-t500x500.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Way 2 Sexy (with Future & Young Thug) Drake">
+     </div>
+     <div class="w3-col l3 m6">
+       <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Dua_Lipa_-_Love_Again_cover_art.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Love Again by Dua Lipa Drake">
+     </div>
+     
+     
+     <div class="w3-col l3 m6">
+       <img src="https://stylecaster.com/wp-content/uploads/2021/08/lizzo-rumors.jpeg?w=480" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rumors (feat. Cardi B) Lizzo Drake">
+     </div>
+   </div>
+ </div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">4 / 10</div>
-        <img src="https://i.ytimg.com/an/2V_uAAAH-_Q/7608203655284526850_mq.jpg?v=60e4a32f" style="width:100%" id = "slideshowimg" >
-        <div class="text">Woman by Doja Cat</div>
-        </div>
+ <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+     <img id="img01" class="w3-image">
+     <p id="caption" class="w3-opacity w3-large"></p>
+   </div>
+ </div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">5 / 10</div>
-        <img src="https://i.scdn.co/image/ab67616d0000b273be82673b5f79d9658ec0a9fd" style="width:100%" id = "slideshowimg" >
-        <div class="text">Thats What I Want by Lil Nas X</div>
-        </div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">6 / 10</div>
-        <img src="https://i1.sndcdn.com/artworks-qN9KEYWzV42q-0-t500x500.jpg" style="width:100%" id = "slideshowimg" >
-        <div class="text">Way 2 Sexy (with Future & Young Thug) Drake</div>
-        </div>
+ <script>
+   // Modal Image Gallery
+   function onClick(element) {
+     document.getElementById("img01").src = element.src;
+     document.getElementById("modal01").style.display = "block";
+     var captionText = document.getElementById("caption");
+     captionText.innerHTML = element.alt;
+   }
+</script>
 
-        <div class="mySlides fade">
-        <div class="numbertext">7 / 10</div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Dua_Lipa_-_Love_Again_cover_art.png" style="width:100%" id = "slideshowimg" >
-        <div class="text">Love Again by Dua Lipa Drake</div>
-        </div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">8 / 10</div>
-        <img src="https://justrandomthings.com/wp-content/uploads/2021/05/Capture1-5.jpg" style="width:100%" id = "slideshowimg" >
-        <div class="text">Saturday by Twenty One Pilots Drake</div>
-        </div>
-
-        <div class="mySlides fade">
-        <div class="numbertext">9 / 10</div>
-        <img src="https://stylecaster.com/wp-content/uploads/2021/08/lizzo-rumors.jpeg?w=480" style="width:100%" id = "slideshowimg" >
-        <div class="text">Rumors (feat. Cardi B) Lizzo Drake</div>
-        </div>
-
-        <div class="mySlides fade">
-        <div class="numbertext">10 / 10</div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Justin_Bieber_-_Sorry_%28Official_Single_Cover%29.png" style="width:100%" id = "slideshowimg" >
-        <div class="text">Sorry by Justin Bieber</div>
-        </div>
-    
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-</body>
 
 <footer class="container-fluid bg-grey py-5">
     <div class="container2">
@@ -127,14 +144,15 @@
                    <div class="logo-part">
                       <img src="images/decibel.PNG" class="w-50 logo-footer" >
                       <p class = "ps">3399 North Rd. Poughkeepsie, NY 12601</p>
-                      <p class = "ps">Where you go to submit make playlists with the world.</p>
+                      <p class = "ps">Where you go to submit and make playlists with the world.</p>
                    </div>
                 </div>
                 <div class="col-md-6 px-4">
                    <h6 class = "h66">Reach Out</h6>
+                   <a href="contact" class="btn-footer"> Contact Us</a>
+
                    <p class = "ps">Try it for yourself!</p>
                    <a href="Submit" class="btn-footer"> Submit a Song </a><br>
-                   <a href="contact" class="btn-footer"> Contact Us</a>
                 </div>
              </div>
           </div>
