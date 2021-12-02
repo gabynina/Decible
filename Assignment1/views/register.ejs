@@ -1,15 +1,22 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>dB-Playlists</title>
-        <link rel="stylesheet" href="/stylesheets/playlists.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
-    </head>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>dB-register</title>
+      <link rel="stylesheet" href="/stylesheets/register.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+      <script src="/play.js" defer></script>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
     <body class = "bodyy">
         <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -59,29 +66,29 @@
     }
     </script>
     
-    
-        <h1 class="animate__animated animate__bounce" id="ContactUs" > Contact Us</h1>
-    
-    
-        <h2 style="color: #f3cabf">Send us a message!</h2>
-    
-        <form method='POST' action='/contact/contact' id='enterForm'>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="contact[name]"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="contact[email]"><br><br>
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="contact[subject]"><br><br>
-        <label for="message">Message:</label><br>
-        <input type="message" id="message" name="contact[message]"><br><br>
-        
-        <!-- <input type ="Submit" value="Submit" /> -->
-        <button type="submit" id="submit" onclick="alert('Thank you, we will contact you with the email that you provided!')">Submit</button>
-        </form>
-    
-        <h3 id="newText"></h3>
-    
-    </body>
+    <body>
+      <h1>
+          SignUp Page
+      </h1>
+      <img src="images/decibel.PNG" alt="" id = "logo" style="width: 100%;">
+
+      <form action="/register" method="POST">
+          <label for="username">UserName</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="firstname">First Name:</label>
+          <input type="text" name="firstname" id="firstname">
+          <label for="lastname">Last Name:</label>
+          <input type="text" name="lastname" id="lastname">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+          <button>Submit</button>
+      </form>
+      <ul>
+          <li><a href="/login">login</a></li>
+      </ul>
+  </body>
     
     <footer class="container-fluid bg-grey py-5">
         <div class="container2">
@@ -131,27 +138,6 @@
            </div>
         </div>
     </footer>
-    <body>
-        <h1>
-            SignUp Page
-        </h1>
-        <form action="/register" method="POST">
-            <label for="username">UserName</label>
-            <input type="text" id="username" name="username">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-            <label for="firstname">First Name:</label>
-            <input type="text" name="firstname" id="firstname">
-            <label for="lastname">Last Name:</label>
-            <input type="text" name="lastname" id="lastname">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email">
-            <button>Submit</button>
-        </form>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/login">login</a></li>
-        </ul>
-    </body>
+
 </html>
 
