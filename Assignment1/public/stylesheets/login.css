@@ -1,59 +1,30 @@
-.bodyy {
-    font-family: Raleway;
-    background-color: #8F746E;
-    color: white;    
-  }
-
-
-.w3-theme-d1{
-    color:#8F746E !important; 
-    background-color:#2e2222 !important;
-  }
-
-#playlist {    
-    font-family: Raleway;
-    font-weight: bold;
-    text-align: center;
-    color: white; 
-    margin-top: 60px;
-    margin-bottom: 10px;
-}
-
-#listen {
-    font-family: Raleway;
-    padding: 12px 20px;
-    text-align: center;
-    color: #eabab0;
-}
-
-
 .bg-grey {
     background: #2e2222;
   }
-  
+
   .logo-footer {
     margin-bottom: 40px;
     margin-left: 22%;
     margin-right: 22%;
   }
-  
+
   .container2{
     font-family: 'Raleway';
     background-color: #2e2222;
     color: #8F746E;
   }
-  
+
   .ps {
   font-size: 12px;
   font-family: 'Raleway';
   }
-  
+
   .h66 {
   font-family: 'Raleway';
   margin-bottom: 40px;
   position: relative;
   }
-  
+
   .h66 :after {
   position: absolute;
   content: "";
@@ -63,7 +34,7 @@
   left: 0;
   bottom: -20px;
   }
-  
+
   .btn-footer {
     color: #8F746E;
     border: 1px solid;
@@ -72,26 +43,80 @@
     padding: 7px 30px;
     line-height: 47px;
   }
-  
+
   footer ul li {
   list-style: none;
   display: block;
   }
-  
+
   footer ul  {
   padding-left: 0;
-  }
-  
+  }   
+
   footer ul  li a{
   color: #8F746E;
   }
-  
+
   a:hover {
   color: #c7b0ab !important;
   }
-  
+
   .logo-part {
   border-right: 1px solid #8F746E;
   height: 100%;
-  }
+}
+
+#login {
+  font-family: Raleway;
+    font-weight: bold;
+    color: white; 
+    margin-top: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bodyy {
+  font-family: Raleway;
+  background-color: #8F746E;
+  color: white; 
+}
+
+input[type]{
+  width: auto; /* width of container */
+  height: auto;
+  font-family: Raleway;
+  padding: 12px 15px;
+  border-radius: 2px;
+  border: 2px solid #fbf3f0;
+  background: white;
+  text-align: center;
+}
+
+button{
+  font-family: Raleway;
+  border-radius: 6px;
+  border: .5px solid #fbf3f0;
+  background: #edcec5;
+  color: white;
+}
+
+
+#logo {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.w3-theme-d1{
+  color:#8F746E !important; 
+  background-color:#2e2222 !important;
+}
+
+form{
+  width: 300px;
+  margin: 0 auto;
+  
+}
 

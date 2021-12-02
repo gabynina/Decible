@@ -1,6 +1,6 @@
 ## Decible
 Our group members consisted of Genevieve Anderson, Gaby Nina, Angie Chrichella, and Kylie Wasserman. This semester we worked on creating Decible, and group collaborative project where users are able to submit songs they enjoy, along with discover new songs and playlists. 
-In the brainsotrming phaase, we came up with the idea to do a music based website becuase music is something that we are all passionate about. 
+In the brainsotrming phase, we came up with the idea to do a music based website becuase music is something that we are all passionate about. 
 
 On our site you can find:
 1: home page
