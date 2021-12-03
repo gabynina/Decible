@@ -1,3 +1,4 @@
+/* footer */
 .bg-grey {
     background: #2e2222;
   }
@@ -66,6 +67,7 @@
   height: 100%;
 }
 
+/* login text */
 #login {
   font-family: Raleway;
     font-weight: bold;
@@ -75,12 +77,14 @@
     text-align: center;
 }
 
+/* overall body */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
   color: white; 
 }
 
+/* each indivual input box */
 input[type]{
   width: auto; /* width of container */
   height: auto;
@@ -92,6 +96,7 @@ input[type]{
   text-align: center;
 }
 
+/* submit button */
 button{
   font-family: Raleway;
   border-radius: 6px;
@@ -100,7 +105,7 @@ button{
   color: white;
 }
 
-
+/* logo */
 #logo {
   width: 300px;
   height: 400px;
@@ -109,13 +114,13 @@ button{
   margin-bottom: -50px;
 }
 
+/* nav bar */
 .w3-theme-d1{
   color:#8F746E !important; 
   background-color:#2e2222 !important;
 }
 
+/* overall form */
 form{
   text-align: center;
-
 }
-

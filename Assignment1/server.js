@@ -3,8 +3,6 @@ const express    = require('express')
 const bodyparser = require( 'body-parser' )
 const app        = express()
 const port = 3000
-const playlistsRoutes = require('./routes/playlists');
-const contactRoutes = require('./routes/contact');
 const mongoose = require('mongoose');
 const Contact = require('./models/contact')
 const Playlists = require('./models/playlists')
@@ -41,9 +39,6 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.set("view engine", "ejs");
-
-//app.use("/playlists", playlistsRoutes);
-//app.use("/contact", contactRoutes);
 
 //getting contact page
 app.get('/', function(req, res) {
@@ -148,6 +143,10 @@ app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
 
 })
 
+//404 page
+app.use(function (req, res, next) {
+  res.status(404).send("Sorry I can not find this page :( ... please go to /index to get back home :)")
+})
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || port, () => {
