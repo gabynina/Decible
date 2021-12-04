@@ -41,6 +41,23 @@ input[type="submit"]{
 
 }
 
+/* logout button */
+#logout{
+  width: 20%;
+  background-color: #ecc9c2;
+  color: white;
+  padding: 14px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 1px;
+  position:relative;
+}
+
 /* submit button */
 #enter{
   font-family: 'Raleway';
