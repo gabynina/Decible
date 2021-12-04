@@ -12,6 +12,7 @@ const passport              =  require("passport"),
       passportLocalMongoose =  require("passport-local-mongoose"),
       User                  =  require("./models/user");
 
+// connect to the database on mongodb
 mongoose.connect("mongodb+srv://user:userpassword@cluster0.lmzh7.mongodb.net/decibel?retryWrites=true&w=majority");
 
 app.use(require("express-session")({
@@ -40,43 +41,54 @@ app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.set("view engine", "ejs");
 
-//getting contact page
+//getting home page
 app.get('/', function(req, res) {
   res.render('index');
 })
 
+//getting home page
 app.get("/index", function(req, res) {
   res.render("index");
 });
 
+//getting about page
 app.get("/about", function(req, res) {
   res.render("about");
 });
 
+//getting contact page
 app.get("/contact", function(req, res) {
   res.render("contact");
 });
 
+//getting playlists page
 app.get("/playlists", function(req, res) {
   res.render("playlists");
 });
 
+//getting submit (a song) page
 app.get("/submit",isLoggedIn ,(req,res) =>{
   res.render("submit");
 })
-//Auth Routes
+
+//getting login page
 app.get("/login",(req,res)=>{
   res.render("login");
 });
+
+//if someone clicks on the submit page, they first need to login on the login page
 app.post("/login",passport.authenticate("local",{
   successRedirect:"/submit",
   failureRedirect:"/login"
 }),function (req, res){
 });
+
+//getting the register page
 app.get("/register",(req,res)=>{
   res.render("register");
 });
 
+//add the new user to the database
 app.post("/register",(req,res)=>{
     
   User.register(new User({username: req.body.username,phone:req.body.phone,telephone: req.body.telephone}),req.body.password,function(err,user){
@@ -89,11 +101,14 @@ app.post("/register",(req,res)=>{
   })    
   })
 })
+
+//when you click on the logout button, you need to login before submitting another song
 app.get("/logout",(req,res)=>{
   req.logout();
   res.redirect("/");
 });
 
+//function to find out if your logged in or not
 function isLoggedIn(req,res,next) {
   if(req.isAuthenticated()){
       return next();
@@ -101,7 +116,7 @@ function isLoggedIn(req,res,next) {
   res.redirect("/login");
 }
 
-
+//adding the information filled out in the contact form to the database
 app.post( '/contact/contact', function( req, res ) {
   //console.log(`contact/contact post request:`);
   //let dataString = ''
@@ -130,6 +145,7 @@ app.post( '/contact/contact', function( req, res ) {
 
 })
 
+//adding the information filled out in the submit a song form to the database
 app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
   
   Playlists.create(req.body.playlists, function (err, playlists) {
@@ -152,6 +168,3 @@ app.use(function (req, res, next) {
 const listener = app.listen(process.env.PORT || port, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
-
-
-
