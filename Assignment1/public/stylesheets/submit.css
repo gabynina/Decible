@@ -1,3 +1,4 @@
+/* overall body */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
@@ -6,13 +7,13 @@
 
 }
 
+/* nav bar */
 .w3-theme-d1{
   color:#8F746E !important; 
   background-color:#2e2222 !important;
 }
 
-
-
+/* overall input for form */
 input[type], input[for]{
   width: 80%; /* width of container */
   height: 150;
@@ -25,6 +26,7 @@ input[type], input[for]{
 
 }
 
+/* overall input for form */
 input[type="submit"]{ 
   width: 20%;
   background-color: #ecc9c2;
@@ -39,12 +41,31 @@ input[type="submit"]{
 
 }
 
+/* logout button */
+#logout{
+  width: 20%;
+  background-color: #ecc9c2;
+  color: white;
+  padding: 14px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 1px;
+  position:relative;
+}
+
+/* submit button */
 #enter{
   font-family: 'Raleway';
   margin-right: 5%;
   margin-left: 5%; 
 }
 
+/* submitbutton */
 #submittitle
  {width: 60%; /* width of container */
   height: 150px; /* height of container */
@@ -57,7 +78,7 @@ input[type="submit"]{
   margin-bottom: -70px;
 }
 
-
+/* everything below is footer */
 .bg-grey {
   background: #2e2222;
 }

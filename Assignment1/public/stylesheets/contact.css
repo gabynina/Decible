@@ -1,14 +1,17 @@
+/* background and font for the whole page, unless otherwise said */
 .bodyy {
     font-family: Raleway;
     background-color: #8F746E;
     color: white;    
-  }
+}
 
-  .w3-theme-d1{
-    color:#8F746E !important; 
-    background-color:#2e2222 !important;
-  }
+/* nav bar */
+.w3-theme-d1{
+  color:#8F746E !important; 
+  background-color:#2e2222 !important;
+}
 
+/* message */
 #ContactUs {
     width: 100%; /* width of container */
     height: 100%; /* height of container */
@@ -21,7 +24,7 @@
     margin-bottom: 10px;
 }
 
-
+/* smaller message */
 h2{
     text-align: center;
     width: 100%; 
@@ -31,12 +34,12 @@ h2{
     margin-top: 5px;
 }
 
-
+/* each individual text boxes on the form */
 input:focus {
   background-color: #edcec5;
 }
 
-
+/* each individual text boxes on the form */
 input[type]{
   width: 100%; /* width of container */
   margin: 1.66%;
@@ -46,6 +49,7 @@ input[type]{
   border: 2px solid #fbf3f0;
 }
 
+/* each individual text boxes on the form */
 input[type= "message"]{
   width: 100%; /* width of container */
   height: 150%;
@@ -57,7 +61,7 @@ input[type= "message"]{
 
 }
 
-
+/* each individual text boxes on the form */
 input[type= "submit"]{
   width: 100%; /* width of container */
   margin: 1.66%;
@@ -68,7 +72,7 @@ input[type= "submit"]{
   background: #edcec5;
 }
 
-
+/* submit button */
 #submit {
   width: 20%;
   background-color: #ecc9c2;
@@ -81,16 +85,19 @@ input[type= "submit"]{
   text-align: center;
 }
 
+/* submit button */
 #submit:hover {
   background-color: #d59c8e;
 }
 
+/* form in total */
 form{
   padding-left: 10%;
   padding-right: 10%;
   
 }
 
+/* everything below is footer */
 .bg-grey {
     background: #2e2222;
   }

@@ -1,3 +1,5 @@
+//function to display a message after submitting a form
+//currently not in use 
 const submitSongFunction = function( k ) {
     console.log('In submitSong')
     k.preventDefault()
