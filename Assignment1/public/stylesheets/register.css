@@ -88,3 +88,52 @@
     margin-top: -50px;
     margin-bottom: -50px;
   }
+
+/* each individual text boxes on the form */
+input[type]{
+  width: 50%; /* width of container */
+  margin: 1.66%;
+  font-family: Raleway;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #fbf3f0;
+}
+
+/* each individual text boxes on the form */
+input[type= "message"]{
+  width: 50%; /* width of container */
+  height: 150%;
+  margin: 1.66%;
+  font-family: Raleway;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #fbf3f0;
+
+}
+
+/* each individual text boxes on the form */
+input[type= "submit"]{
+  width: 50%; /* width of container */
+  margin: 1.66%;
+  font-family: Raleway;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #fbf3f0;
+  background: #edcec5;
+}
+
+/* submit button */
+button{
+  font-family: Raleway;
+  border-radius: 6px;
+  border: .5px solid #fbf3f0;
+  background: #edcec5;
+  color: white;
+  align-content: center;
+  margin: 8px 0;
+}
+
+form{
+  padding-left: 33%;
+  
+}

@@ -82,6 +82,7 @@
   font-family: Raleway;
   background-color: #8F746E;
   color: white; 
+  align-items: center;
 }
 
 /* each indivual input box */
@@ -104,6 +105,7 @@ button{
   background: #edcec5;
   color: white;
   align-content: center;
+  margin: 8px 0;
 }
 
 /* logo */
