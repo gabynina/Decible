@@ -11,7 +11,9 @@
   background-color:#2e2222 !important;
 }
 
-
+input:focus {
+  background-color: #edcec5;
+}
 
 input[type], input[for]{
   width: 80%; /* width of container */
@@ -39,8 +41,13 @@ input[type="submit"]{
 
 }
 
-#submitButton{ 
+#submit:hover {
+  background-color: #d59c8e;
+}
+
+.logoutButton{ 
   width: 20%;
+  height: 8%;
   background-color: #ecc9c2;
   color: white;
   padding: 14px 15px;
@@ -50,13 +57,21 @@ input[type="submit"]{
   cursor: pointer;
   text-align: center;
   margin-bottom: 45px;
-  font-family: 'Raleway';
-  margin-right: 5%;
-  margin-left: 5%; 
+  margin-left:40%;
+  margin-right:40%;
+}
 
+.logoutButton:hover {
+  background-color: #d59c8e;
 }
 
 #enter{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+#logout{
   font-family: 'Raleway';
   margin-right: 5%;
   margin-left: 5%; 
