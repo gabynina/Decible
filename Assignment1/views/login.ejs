@@ -73,10 +73,12 @@
 
       <h1 id = "login"> PLEASE LOGIN TO SUBMIT A SONG </h1>
        <form action="/login" method="POST" id="loginform">
-         <input type="text" placeholder="username" id="xyz" name="username">
-         <input type="password" placeholder = "password" id="password" name="password">
-         <button>Login</button>
-         <button><a href="/register"> SignUp</a></button>
+         <label for="xyz">User Name</label><br>
+         <input type="text" id="xyz" name="username"><br>
+         <label for="password">Password</label><br>
+         <input type="password"id="password" name="password"><br><br>
+         <button>Login</button><br><br>
+         <button><a href="/register"> Sign Up</a></button>
       </form>
       <h3>     </h3>
    </body>
