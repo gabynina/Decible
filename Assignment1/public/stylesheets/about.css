@@ -1,17 +1,14 @@
-/* background and font for the whole page, unless otherwise said */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
   color: white;    
 }
 
-/* nav bar */
 .w3-theme-d1{
   color:#8F746E !important; 
   background-color:#2e2222 !important;
 }
 
-/* message */
 #about {width: 150px; /* width of container */
   height: 150px; /* height of container */
   margin-left: auto;
@@ -23,7 +20,6 @@
   margin-bottom: 5px;
 }
 
-/* Meet the team text */
 #team{
   font-family: 'Raleway';
   text-align: center;
@@ -32,7 +28,7 @@
 }
 
 
-/* Our Individual Cards */
+
 .column {
   float: left;
   width: 33.3%;
@@ -42,7 +38,6 @@
   background-color: #8F746E;
 }
 
-/* More for the Cards */
 .card {
   box-shadow: 0 5px 8px 0 #b3ac6a;
   margin: 6px;
@@ -50,13 +45,11 @@
   background-color: #8F746E;
 }
 
-/* Cards */
 .container {
   padding: 0 16px;
   background-color: #8F746E;
 }
 
-/* Cards */
 .container::after, .row::after{
   content: "";
   clear: both;
@@ -64,7 +57,7 @@
   background-color: #8F746E;
 }
 
-/* Contact me button */
+
 .button {
   border: none;
   outline: 0;
@@ -77,18 +70,15 @@
   font-family: Raleway;
 }
 
-/* Contact me Button */
 .button:hover {
   background-color: #555;
 }
 
-/* CEO etc text */
 .title {
   color: #e5b6c0;
   font-size: 20px;
 }
 
-/* text about everyone as a whole */
 .summary{
   margin-bottom: 20px;
   margin-top: -100px;
@@ -98,14 +88,13 @@
   color: #eabab0;
 }
 
-/* logo */
 #logo {
   object-fit: cover;
   width:300px;
   height:300px;
 }
 
-/* everything below is footer */
+
 .bg-grey {
   background: #2e2222;
 }

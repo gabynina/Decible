@@ -1,6 +1,3 @@
-//function to display a message after submitting a form
-//currently not in use
-
 const submitMessageFunction = function( e ) {
   console.log('In submitMessage')
   e.preventDefault()
