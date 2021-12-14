@@ -1,3 +1,4 @@
+/* Overall body of the code */
 .bodyy {
     font-family: Raleway;
     background-color: #8F746E;
@@ -9,9 +10,10 @@
     background-color:#2e2222 !important;
   }
 
+/* Contact Us Title */
 #ContactUs {
-    width: 100%; /* width of container */
-    height: 100%; /* height of container */
+    width: 100%; 
+    height: 100%; 
     margin-left: auto;
     margin-right: auto;
     font-family: 'Raleway';
@@ -21,7 +23,7 @@
     margin-bottom: 10px;
 }
 
-
+/* subtitle */
 h2{
     text-align: center;
     width: 100%; 
@@ -31,7 +33,7 @@ h2{
     margin-top: 5px;
 }
 
-
+/* form */
 input:focus {
   background-color: #edcec5;
 }

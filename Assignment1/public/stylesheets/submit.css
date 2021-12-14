@@ -1,3 +1,4 @@
+/* Overall body of the code */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
@@ -11,12 +12,14 @@
   background-color:#2e2222 !important;
 }
 
+/* form */
+
 input:focus {
   background-color: #edcec5;
 }
 
 input[type], input[for]{
-  width: 80%; /* width of container */
+  width: 80%; 
   height: 150;
   margin: 1.66%;
   font-family: Raleway;
@@ -76,6 +79,8 @@ input[type="submit"]{
   margin-right: 5%;
   margin-left: 5%; 
 }
+
+/* submit title */
 
 #submittitle
  {width: 60%;

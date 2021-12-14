@@ -1,13 +1,14 @@
+/* Overall body of the code */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
   color: white;    
 }
 
+/* Home Title */
 
-
-#Homepage {width: 850px; /* width of container */
-    height: 100px; /* height of container */
+#Homepage {width: 850px; 
+    height: 100px; 
     margin-left: auto;
     margin-right: auto;
     font-family: Raleway;

@@ -1,3 +1,4 @@
+/* Overall body of the code */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
@@ -12,12 +13,14 @@
   margin-bottom: -50px;
 }
 
+/* form */
+
 input:focus {
   background-color: #edcec5;
 }
 
 input[type], input[for]{
-  width: 80%; /* width of container */
+  width: 80%; 
   height: 8%;
   margin: 1.66%;
   font-family: Raleway;
@@ -60,8 +63,8 @@ input[type], input[for]{
 }
 
 #registertitle
- {width: 60%; /* width of container */
-  height: 150px; /* height of container */
+ {width: 60%; 
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
