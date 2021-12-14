@@ -3,8 +3,6 @@ const express    = require('express')
 const bodyparser = require( 'body-parser' )
 const app        = express()
 const port = 3000
-const playlistsRoutes = require('./routes/playlists');
-const contactRoutes = require('./routes/contact');
 const mongoose = require('mongoose');
 const Contact = require('./models/contact')
 const Playlists = require('./models/playlists')
@@ -14,6 +12,7 @@ const passport              =  require("passport"),
       passportLocalMongoose =  require("passport-local-mongoose"),
       User                  =  require("./models/user");
 
+// connect to the database
 mongoose.connect("mongodb+srv://user:userpassword@cluster0.lmzh7.mongodb.net/decibel?retryWrites=true&w=majority");
 
 app.use(require("express-session")({
@@ -42,33 +41,36 @@ app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.set("view engine", "ejs");
 
-//app.use("/playlists", playlistsRoutes);
-//app.use("/contact", contactRoutes);
-
-//getting contact page
+//getting home page
 app.get('/', function(req, res) {
   res.render('index');
 })
 
+//getting index page
 app.get("/index", function(req, res) {
   res.render("index");
 });
 
+//getting about page
 app.get("/about", function(req, res) {
   res.render("about");
 });
 
+//getting contact page
 app.get("/contact", function(req, res) {
   res.render("contact");
 });
 
+//getting playlist page
 app.get("/playlists", function(req, res) {
   res.render("playlists");
 });
 
+//getting submit a song page
 app.get("/submit",isLoggedIn ,(req,res) =>{
   res.render("submit");
 })
+
 //Auth Routes
 app.get("/login",(req,res)=>{
   res.render("login");
@@ -83,7 +85,7 @@ app.get("/register",(req,res)=>{
 });
 
 app.post("/register",(req,res)=>{
-    
+  //adding users to database
   User.register(new User({username: req.body.username,phone:req.body.phone,telephone: req.body.telephone}),req.body.password,function(err,user){
       if(err){
           console.log(err);
@@ -108,22 +110,7 @@ function isLoggedIn(req,res,next) {
 
 
 app.post( '/contact/contact', function( req, res ) {
-  //console.log(`contact/contact post request:`);
-  //let dataString = ''
-
-  // req.on( 'data', function( data ) {
-  //     dataString += data 
-  // })
-
-  // req.on( 'end', function() {
-  //   const json = JSON.parse( dataString )
-  //   appdata.push(json)
-  //   console.log(appdata)
-  //   // response.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
-  //   res.setHeader('content-type', 'text/plain');
-  //   res.end(JSON.stringify(appdata))
-  // })
-
+  //adding contacts to database
   Contact.create(req.body.contact, function (err, contact) {
     console.log(req.body.contact)
     if (err) {
@@ -132,11 +119,10 @@ app.post( '/contact/contact', function( req, res ) {
       res.redirect('/contact');
   }
   })
-
 })
 
 app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
-  
+  //adding songs to playlists to database
   Playlists.create(req.body.playlists, function (err, playlists) {
     console.log(req.body.playlists)
     if (err) {
@@ -147,7 +133,6 @@ app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
   })
 
 })
-
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || port, () => {

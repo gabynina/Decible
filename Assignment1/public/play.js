@@ -1,3 +1,4 @@
+//old function for getting and printing on h3 "You have submitted 'insert title' by 'insert artist'"
 const submitSongFunction = function( k ) {
     console.log('In submitSong')
     k.preventDefault()
