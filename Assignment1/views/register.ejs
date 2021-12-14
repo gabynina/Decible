@@ -1,0 +1,146 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>dB-register</title>
+      <link rel="stylesheet" href="/stylesheets/register.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+      <script src="/play.js" defer></script>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <body class = "bodyy">
+        <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+       <div class="w3-bar w3-theme-d1 w3-card" id="myNavbar">
+         <a href="index" class="w3-bar-item w3-button w3-wide">Decibel</a>
+         
+         <!-- Right-sided navbar links -->
+         <div class="w3-right w3-hide-small">
+           <a href="Submit" class="w3-bar-item w3-button">SUBMIT A SONG</a>
+           <a href="about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+           <a href="playlists" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PLAYLISTS</a>
+           <a href="contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+         </div>
+         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+     
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+     </div>
+    
+     <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+       <a href="Submit" onclick="w3_close()" class="w3-bar-item w3-button">SUBMIT A SONG</a>
+       <a href="about" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+       <a href="playlists" onclick="w3_close()" class="w3-bar-item w3-button">PLAYLISTS</a>
+       <a href="contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+     </nav>
+     
+    
+    <script>
+     // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+    
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+    </script>
+    
+    <body>
+      <img src="images/decibel.PNG" alt="" id = "logo" style="width: 100%;">
+
+      <!-- title -->
+      <h1 id="registertitle">Sign Up</h1>
+
+      <!-- form -->
+      <form action="/register" method="POST" id = "enter">
+          <label for="username">UserName</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Password</label><br>
+          <input type="password" id="password" name="password"><br>
+          <label for="firstname">First Name:</label><br>
+          <input type="text" name="firstname" id="firstname"><br>
+          <label for="lastname">Last Name:</label><br>
+          <input type="text" name="lastname" id="lastname"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" name="email" id="email"><br><br>
+          <button class = "submit">Submit</button><br>
+          
+      </form>
+
+      <button class = "submit" id = "login"><a href="/login"> Login</a></button>
+      
+  </body>
+    
+  <!-- Footer (the same on all pages) -->
+    <footer class="container-fluid bg-grey py-5">
+        <div class="container2">
+           <div class="row">
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-6 ">
+                       <div class="logo-part">
+                          <img src="images/decibel.PNG" class="w-50 logo-footer" >
+                          <p class = "ps">3399 North Rd. Poughkeepsie, NY 12601</p>
+                          <p class = "ps">Where you go to submit make playlists with the world.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-6 px-4">
+                       <h6 class = "h66">Reach Out</h6>
+                       <p class = "ps">Try it for yourself!</p>
+                       <a href="Submit" class="btn-footer"> Submit a Song </a><br>
+                       <a href="contact" class="btn-footer"> Contact Us</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-6 px-4">
+                       <h6 class = "h66">Important Links</h6>
+                       <div class="row ">
+                          <div class="col-md-6">
+                             <ul class = "pages">
+                                <li> <a class = "ps" href="index"> Home</a> </li>
+                                <li> <a class = "ps" href="playlists"> Playlists</a> </li>
+                                <li> <a class = "ps" href="contact"> Contact</a> </li>
+                                <li> <a class = "ps" href="about"> About</a> </li>
+                                <li> <a class = "ps" href="Submit"> Submit</a> </li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 ">
+                       <h6 class = "h66"> Creators</h6>
+                       <p class = "ps">Angelina Chirichella</p>
+                       <p class = "ps">Gabriella Nina</p>
+                       <p class = "ps">Genevieve Anderson</p>
+                       <p class = "ps">Kylie Wasserman</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </footer>
+
+</html>
+

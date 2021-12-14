@@ -1,127 +1,113 @@
 /* Overall body of the code */
 .bodyy {
-    font-family: Raleway;
-    background-color: #8F746E;
-    color: white;    
-  }
-
-  .w3-theme-d1{
-    color:#8F746E !important; 
-    background-color:#2e2222 !important;
-  }
-
-/* Contact Us Title */
-#ContactUs {
-    width: 100%; 
-    height: 100%; 
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Raleway';
-    text-align: center;
-    font-weight: bold;
-    margin-top: 60px;
-    margin-bottom: 10px;
+  font-family: Raleway;
+  background-color: #8F746E;
+  color: white; 
 }
 
-/* subtitle */
-h2{
-    text-align: center;
-    width: 100%; 
-    height: 100%;
-    font-size: 20px;
-    font-family: 'Raleway';
-    margin-top: 5px;
+#logo {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 /* form */
+
 input:focus {
   background-color: #edcec5;
 }
 
-
-input[type]{
-  width: 100%; /* width of container */
+input[type], input[for]{
+  width: 80%; 
+  height: 8%;
   margin: 1.66%;
   font-family: Raleway;
   padding: 12px 15px;
   border-radius: 6px;
   border: 2px solid #fbf3f0;
-}
-
-input[type= "message"]{
-  width: 100%; /* width of container */
-  height: 150%;
-  margin: 1.66%;
-  font-family: Raleway;
-  padding: 12px 15px;
-  border-radius: 6px;
-  border: 2px solid #fbf3f0;
+  background: white;
 
 }
 
-
-input[type= "submit"]{
-  width: 100%; /* width of container */
-  margin: 1.66%;
-  font-family: Raleway;
-  padding: 12px 15px;
-  border-radius: 6px;
-  border: 2px solid #fbf3f0;
-  background: #edcec5;
-}
-
-
-#submit {
+.submit{ 
   width: 20%;
+  height: 8%;
   background-color: #ecc9c2;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 14px 15px;
+  margin: 8px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 45px;
+
 }
 
-#submit:hover {
+.submit:hover {
   background-color: #d59c8e;
 }
 
-form{
-  padding-left: 10%;
-  padding-right: 10%;
-  
+#enter{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+#login{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+#registertitle
+ {width: 60%; 
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-family: 'Raleway';
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: -70px;
 }
 
 /* all footer information below */
 
-.bg-grey {
+.w3-theme-d1{
+    color:#8F746E !important; 
+    background-color:#2e2222 !important;
+  }
+
+  .bg-grey {
     background: #2e2222;
   }
-  
+
   .logo-footer {
     margin-bottom: 40px;
     margin-left: 22%;
     margin-right: 22%;
   }
-  
+
   .container2{
     font-family: 'Raleway';
     background-color: #2e2222;
     color: #8F746E;
   }
-  
+
   .ps {
   font-size: 12px;
   font-family: 'Raleway';
   }
-  
+
   .h66 {
   font-family: 'Raleway';
   margin-bottom: 40px;
   position: relative;
   }
-  
+
   .h66 :after {
   position: absolute;
   content: "";
@@ -131,7 +117,7 @@ form{
   left: 0;
   bottom: -20px;
   }
-  
+
   .btn-footer {
     color: #8F746E;
     border: 1px solid;
@@ -140,25 +126,25 @@ form{
     padding: 7px 30px;
     line-height: 47px;
   }
-  
+
   footer ul li {
   list-style: none;
   display: block;
   }
-  
+
   footer ul  {
   padding-left: 0;
-  }
-  
+  }   
+
   footer ul  li a{
   color: #8F746E;
   }
-  
+
   a:hover {
   color: #c7b0ab !important;
   }
-  
+
   .logo-part {
   border-right: 1px solid #8F746E;
   height: 100%;
-  }
+}

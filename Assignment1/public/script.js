@@ -1,3 +1,5 @@
+//old function for getting and printing on h3 "Thank you 'insert name' for contacting us, we will reach you at 'insert email'"
+
 const submitMessageFunction = function( e ) {
   console.log('In submitMessage')
   e.preventDefault()

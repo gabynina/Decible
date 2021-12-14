@@ -1,3 +1,4 @@
+/* Overall body of the code */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
@@ -11,10 +12,14 @@
   background-color:#2e2222 !important;
 }
 
+/* form */
 
+input:focus {
+  background-color: #edcec5;
+}
 
 input[type], input[for]{
-  width: 80%; /* width of container */
+  width: 80%; 
   height: 150;
   margin: 1.66%;
   font-family: Raleway;
@@ -39,15 +44,47 @@ input[type="submit"]{
 
 }
 
+#submit:hover {
+  background-color: #d59c8e;
+}
+
+.logoutButton{ 
+  width: 20%;
+  height: 8%;
+  background-color: #ecc9c2;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-left:40%;
+  margin-right:40%;
+}
+
+.logoutButton:hover {
+  background-color: #d59c8e;
+}
+
 #enter{
   font-family: 'Raleway';
   margin-right: 5%;
   margin-left: 5%; 
 }
 
+#logout{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+/* submit title */
+
 #submittitle
- {width: 60%; /* width of container */
-  height: 150px; /* height of container */
+ {width: 60%;
+  height: 150px; 
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -57,7 +94,7 @@ input[type="submit"]{
   margin-bottom: -70px;
 }
 
-
+/* all footer information below */
 .bg-grey {
   background: #2e2222;
 }
