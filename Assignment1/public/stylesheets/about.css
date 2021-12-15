@@ -70,8 +70,11 @@
   font-family: Raleway;
 }
 
-.button:hover {
-  background-color: #e5b6c0;
+
+
+#teamPic {
+  height: 400px;
+  object-fit: cover;
 }
 
 .title {
