@@ -84,6 +84,11 @@ app.get("/register",(req,res)=>{
   res.render("register");
 });
 
+//404 page
+app.use(function (req, res, next) {
+  res.status(404).send("Sorry can't find that!")
+})
+
 app.post("/register",(req,res)=>{
   //adding users to database
   User.register(new User({username: req.body.username,phone:req.body.phone,telephone: req.body.telephone}),req.body.password,function(err,user){
