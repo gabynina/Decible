@@ -1,10 +1,86 @@
-/* nav bar */
+/* Overall body of the code */
+.bodyy {
+  font-family: Raleway;
+  background-color: #8F746E;
+  color: white; 
+}
+
+#logo {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+/* form */
+
+input:focus {
+  background-color: #edcec5;
+}
+
+input[type], input[for]{
+  width: 80%; 
+  height: 8%;
+  margin: 1.66%;
+  font-family: Raleway;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #fbf3f0;
+  background: white;
+
+}
+
+.submit{ 
+  width: 20%;
+  height: 8%;
+  background-color: #ecc9c2;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 45px;
+
+}
+
+.submit:hover {
+  background-color: #d59c8e;
+}
+
+#enter{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+#login{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+#registertitle
+ {width: 60%; 
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-family: 'Raleway';
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: -70px;
+}
+
+/* all footer information below */
+
 .w3-theme-d1{
     color:#8F746E !important; 
     background-color:#2e2222 !important;
   }
 
-  /* everything below is footer */
   .bg-grey {
     background: #2e2222;
   }
@@ -72,19 +148,3 @@
   border-right: 1px solid #8F746E;
   height: 100%;
 }
-
-/* overall body */
-.bodyy {
-    font-family: Raleway;
-    background-color: #8F746E;
-    color: white; 
-  }
-
-  /* logo */
-  #logo {
-    width: 300px;
-    height: 400px;
-    object-fit: contain;
-    margin-top: -50px;
-    margin-bottom: -50px;
-  }

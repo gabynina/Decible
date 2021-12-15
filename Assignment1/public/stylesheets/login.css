@@ -1,4 +1,94 @@
-/* footer */
+/* Login Title */
+#login {
+  font-family: Raleway;
+    font-weight: bold;
+    color: white; 
+    margin-top: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Overall body of the code */
+
+.bodyy {
+  font-family: Raleway;
+  background-color: #8F746E;
+  color: white; 
+}
+
+/* form  */
+
+button{
+  font-family: Raleway;
+  border-radius: 6px;
+  border: .5px solid #fbf3f0;
+  background: #edcec5;
+  color: white;
+}
+
+input:focus {
+  background-color: #edcec5;
+}
+
+input[type], input[for]{
+  width: 80%;
+  height: 8%;
+  margin: 1.66%;
+  font-family: Raleway;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #fbf3f0;
+  background: white;
+
+}
+
+.buttons{ 
+  width: 20%;
+  height: 8%;
+  background-color: #ecc9c2;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 45px;
+
+}
+
+.buttons:hover {
+  background-color: #d59c8e;
+}
+
+#loginform{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+#register{
+  font-family: 'Raleway';
+  margin-right: 5%;
+  margin-left: 5%; 
+}
+
+
+#logo {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.w3-theme-d1{
+  color:#8F746E !important; 
+  background-color:#2e2222 !important;
+}
+
+/* all footer information below */
+
 .bg-grey {
     background: #2e2222;
   }
@@ -65,63 +155,4 @@
   .logo-part {
   border-right: 1px solid #8F746E;
   height: 100%;
-}
-
-/* login text */
-#login {
-  font-family: Raleway;
-    font-weight: bold;
-    color: white; 
-    margin-top: auto;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* overall body */
-.bodyy {
-  font-family: Raleway;
-  background-color: #8F746E;
-  color: white; 
-}
-
-/* each indivual input box */
-input[type]{
-  width: auto; /* width of container */
-  height: auto;
-  font-family: Raleway;
-  padding: 12px 15px;
-  border-radius: 2px;
-  border: 2px solid #fbf3f0;
-  background: white;
-  text-align: center;
-}
-
-/* submit button */
-button{
-  font-family: Raleway;
-  border-radius: 6px;
-  border: .5px solid #fbf3f0;
-  background: #edcec5;
-  color: white;
-  align-content: center;
-}
-
-/* logo */
-#logo {
-  width: 300px;
-  height: 400px;
-  object-fit: contain;
-  margin-top: -50px;
-  margin-bottom: -50px;
-}
-
-/* nav bar */
-.w3-theme-d1{
-  color:#8F746E !important; 
-  background-color:#2e2222 !important;
-}
-
-/* overall form */
-form{
-  text-align: center;
 }

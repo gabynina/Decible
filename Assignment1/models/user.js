@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const passportLocalMongoose = require("passport-local-mongoose");
 
+//have these sections in the database
 const UserSchema = new mongoose.Schema({
-    //the database will have username, password, firstname, lastname, and email
     username:String,
     password:String,
     firstname:String,
@@ -10,8 +10,7 @@ const UserSchema = new mongoose.Schema({
     email:String
 }) ;
 
-
 UserSchema.plugin(passportLocalMongoose);
 
-//it will be under "Users" folder
+//in User section of the database
 module.exports = mongoose.model("User",UserSchema);

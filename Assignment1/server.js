@@ -12,7 +12,7 @@ const passport              =  require("passport"),
       passportLocalMongoose =  require("passport-local-mongoose"),
       User                  =  require("./models/user");
 
-// connect to the database on mongodb
+// connect to the database
 mongoose.connect("mongodb+srv://user:userpassword@cluster0.lmzh7.mongodb.net/decibel?retryWrites=true&w=majority");
 
 app.use(require("express-session")({
@@ -46,7 +46,7 @@ app.get('/', function(req, res) {
   res.render('index');
 })
 
-//getting home page
+//getting index page
 app.get("/index", function(req, res) {
   res.render("index");
 });
@@ -61,36 +61,31 @@ app.get("/contact", function(req, res) {
   res.render("contact");
 });
 
-//getting playlists page
+//getting playlist page
 app.get("/playlists", function(req, res) {
   res.render("playlists");
 });
 
-//getting submit (a song) page
+//getting submit a song page
 app.get("/submit",isLoggedIn ,(req,res) =>{
   res.render("submit");
 })
 
-//getting login page
+//Auth Routes
 app.get("/login",(req,res)=>{
   res.render("login");
 });
-
-//if someone clicks on the submit page, they first need to login on the login page
 app.post("/login",passport.authenticate("local",{
   successRedirect:"/submit",
   failureRedirect:"/login"
 }),function (req, res){
 });
-
-//getting the register page
 app.get("/register",(req,res)=>{
   res.render("register");
 });
 
-//add the new user to the database
 app.post("/register",(req,res)=>{
-    
+  //adding users to database
   User.register(new User({username: req.body.username,phone:req.body.phone,telephone: req.body.telephone}),req.body.password,function(err,user){
       if(err){
           console.log(err);
@@ -101,14 +96,11 @@ app.post("/register",(req,res)=>{
   })    
   })
 })
-
-//when you click on the logout button, you need to login before submitting another song
 app.get("/logout",(req,res)=>{
   req.logout();
   res.redirect("/");
 });
 
-//function to find out if your logged in or not
 function isLoggedIn(req,res,next) {
   if(req.isAuthenticated()){
       return next();
@@ -116,24 +108,9 @@ function isLoggedIn(req,res,next) {
   res.redirect("/login");
 }
 
-//adding the information filled out in the contact form to the database
+
 app.post( '/contact/contact', function( req, res ) {
-  //console.log(`contact/contact post request:`);
-  //let dataString = ''
-
-  // req.on( 'data', function( data ) {
-  //     dataString += data 
-  // })
-
-  // req.on( 'end', function() {
-  //   const json = JSON.parse( dataString )
-  //   appdata.push(json)
-  //   console.log(appdata)
-  //   // response.writeHead( 200, "OK", {'Content-Type': 'text/plain' })
-  //   res.setHeader('content-type', 'text/plain');
-  //   res.end(JSON.stringify(appdata))
-  // })
-
+  //adding contacts to database
   Contact.create(req.body.contact, function (err, contact) {
     console.log(req.body.contact)
     if (err) {
@@ -142,12 +119,10 @@ app.post( '/contact/contact', function( req, res ) {
       res.redirect('/contact');
   }
   })
-
 })
 
-//adding the information filled out in the submit a song form to the database
 app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
-  
+  //adding songs to playlists to database
   Playlists.create(req.body.playlists, function (err, playlists) {
     console.log(req.body.playlists)
     if (err) {
@@ -159,12 +134,10 @@ app.post( '/submit/submit', bodyparser.json(), function( req, res ) {
 
 })
 
-//404 page
-app.use(function (req, res, next) {
-  res.status(404).send("Sorry I can not find this page :( ... please go to /index to get back home :)")
-})
-
 // listen for requests :)
 const listener = app.listen(process.env.PORT || port, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
+
+
+

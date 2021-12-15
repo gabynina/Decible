@@ -1,17 +1,18 @@
-/* overall body */
+/* Overall body of the code */
 .bodyy {
     font-family: Raleway;
     background-color: #8F746E;
     color: white;    
   }
 
-/* nav bar */
+
 .w3-theme-d1{
     color:#8F746E !important; 
     background-color:#2e2222 !important;
   }
 
-/* playlist text */
+/* Playlist Title */
+
 #playlist {    
     font-family: Raleway;
     font-weight: bold;
@@ -21,7 +22,6 @@
     margin-bottom: 10px;
 }
 
-/* actual playlist */
 #listen {
     font-family: Raleway;
     padding: 12px 20px;
@@ -29,7 +29,8 @@
     color: #eabab0;
 }
 
-/* everything below is footer */
+/* all footer information below */
+
 .bg-grey {
     background: #2e2222;
   }

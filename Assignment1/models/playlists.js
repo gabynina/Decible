@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
+//have these sections in the database
 const playlistsSchema = mongoose.Schema({
-    //in the database there will be artist and title 
     artist: String,
     title: String
 })
 
-//it will be under "Playlists" folder
+//in Playlists section of the database
 module.exports = mongoose.model("Playlists", playlistsSchema);

@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
+//have these sections in the database
 const contactSchema = mongoose.Schema({
-    //in the database, there will be name, email, subject, and message
     name: String,
     email: String,
     subject: String,
     message: String
 })
 
-//it will be under "Contact" folder
+//in Contact section of the database
 module.exports = mongoose.model("Contact", contactSchema);

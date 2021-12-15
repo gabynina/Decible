@@ -1,13 +1,14 @@
-/* overall body */
+/* Overall body of the code */
 .bodyy {
   font-family: Raleway;
   background-color: #8F746E;
   color: white;    
 }
 
-/* Homepage text */
-#Homepage {width: 850px; /* width of container */
-    height: 100px; /* height of container */
+/* Home Title */
+
+#Homepage {width: 850px; 
+    height: 100px; 
     margin-left: auto;
     margin-right: auto;
     font-family: Raleway;
@@ -18,7 +19,6 @@
     
 }
 
-/* logo */
 #logo {
   width: 300px;
   height: 400px;
@@ -46,13 +46,13 @@
   to {opacity: 1}
 }
 
-/* nav bar */
+/* all footer information below */
+
 .w3-theme-d1{
   color:#8F746E !important; 
   background-color:#2e2222 !important;
 }
 
-/* everything below is footer */
 .bg-grey {
   background: #2e2222;
 }

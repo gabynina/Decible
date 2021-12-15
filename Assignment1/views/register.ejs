@@ -67,33 +67,32 @@
     </script>
     
     <body>
-       <!-- Register text -->
-      <h1>
-          SignUp Page
-      </h1>
-      <!-- logo -->
       <img src="images/decibel.PNG" alt="" id = "logo" style="width: 100%;">
 
-      <!-- register form -->
-      <form action="/register" method="POST">
-          <label for="username">UserName</label>
-          <input type="text" id="username" name="username">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password">
-          <label for="firstname">First Name:</label>
-          <input type="text" name="firstname" id="firstname">
-          <label for="lastname">Last Name:</label>
-          <input type="text" name="lastname" id="lastname">
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email">
-          <button>Submit</button>
+      <!-- title -->
+      <h1 id="registertitle">Sign Up</h1>
+
+      <!-- form -->
+      <form action="/register" method="POST" id = "enter">
+          <label for="username">UserName</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Password</label><br>
+          <input type="password" id="password" name="password"><br>
+          <label for="firstname">First Name:</label><br>
+          <input type="text" name="firstname" id="firstname"><br>
+          <label for="lastname">Last Name:</label><br>
+          <input type="text" name="lastname" id="lastname"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" name="email" id="email"><br><br>
+          <button class = "submit">Submit</button><br>
+          
       </form>
-      <ul>
-          <li><a href="/login">login</a></li>
-      </ul>
+
+      <button class = "submit" id = "login"><a href="/login"> Login</a></button>
+      
   </body>
     
-  <!-- footer -->
+  <!-- Footer (the same on all pages) -->
     <footer class="container-fluid bg-grey py-5">
         <div class="container2">
            <div class="row">

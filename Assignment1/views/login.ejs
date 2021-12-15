@@ -67,20 +67,25 @@
         }
         </script>
 
-      <!-- logo -->
+      
       <img src="images/decibel.PNG" alt="" id = "logo" style="width: 100%;">
       
-        <!-- login form -->
+
+      <!-- Login Form -->
       <h1 id = "login"> PLEASE LOGIN TO SUBMIT A SONG </h1>
        <form action="/login" method="POST" id="loginform">
-         <input type="text" placeholder="username" id="xyz" name="username">
-         <input type="password" placeholder = "password" id="password" name="password">
+         <label for="xyz">User Name</label><br>
+         <input type="text" id="xyz" name="username"><br>
+         <label for="password">Password</label><br>
+         <input type="password"id="password" name="password"><br><br>
+         <button class = "buttons">Login</button><br>
       </form>
-      <button>Login</button>
-      <button><a href="/register"> SignUp</a></button>
+      <button class = "buttons" id = register><a href="/register"> Sign Up</a></button>
+
+      <h3>     </h3>
    </body>
 
-   <!-- footer -->
+   <!-- Footer (the same on all pages) -->
    <footer class="container-fluid bg-grey py-5">
       <div class="container2">
          <div class="row">

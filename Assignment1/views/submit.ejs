@@ -67,24 +67,25 @@ function w3_close() {
 }
 </script>
 
-<!-- Submit a song text -->
+<!-- Submit a title -->
     <h1 class="animate__animated animate__bounce" id="submittitle" > Submit a Song Here</h1>
 
-    <!-- submit a song form-->
+    <!-- form -->
   <form method='POST' action='/submit/submit' id='enter'>
     <label for="artist">ARTIST:</label><br>
     <input type="text" id="artist" name="playlists[artist]"><br>
     <label for="title">SONG TITLE:</label><br>
     <input type="text" id="title" name="playlists[title]"><br>
-    <input type="submit" onclick="alert('Thank you for your submission')">
-    <!-- <input type ="Submit" value="Submit" /> -->
+    <input type="submit" id = "submit" onclick="alert('Thank you for your submission')"><br>
+    
   </form>
 
-  <a href="/logout" id = "logout">Logout</a>
+  <button class = "logoutButton" id = "logout"><a href="/logout"> Logout</a></button><br>
+   <label for="artist"></label><br>
 
 </body>
 
-<!-- footer -->
+<!-- Footer (the same on all pages) -->
 <footer class="container-fluid bg-grey py-5">
     <div class="container2">
        <div class="row">
